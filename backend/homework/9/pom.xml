@@ -59,7 +59,7 @@
     </dependencies>
 
     <build>
-        <pluginMangement>
+        <pluginManagement>
             <plugins>
                 <plugin>
                     <groupId>org.sonarsource.scanner.maven</groupId>
@@ -71,7 +71,7 @@
                     <artifactId>spring-boot-maven-plugin</artifactId>
                 </plugin>
             </plugins>
-        </pluginMangement>
+        </pluginManagement>
     </build>
 
 </project>
