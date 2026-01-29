@@ -1,73 +1,67 @@
-
-employee =
-{
-id: 1,
-name: "Alice Johnson",
-age: 30,
-salary: 85000,
-department: "Engineering",
-skills: ["JavaScript", "React", "Node.js"],
-experience: 5
-}  
- 
-
-
-const employee1 =
-{
-id: 1,
-name: "Alice Johnson",
-age: 30,
-salary: 85000,
-department: "Engineering",
-skills: ["JavaScript", "React", "Node.js"],
-experience: 5
-}  
-
-
+const employee = {
+  id: null,
+  name: "",
+  age: 0,
+  salary: 0,
+  department: "",
+  skills: [],
+  experience: 0
+};
+const employee1 = {
+  
+  id: 1,
+  name: "Alice Johnson",
+  age: 30,
+  salary: 85000,
+  department: "Engineering",
+  skills: ["JavaScript", "React", "Node.js"],
+  experience: 5
+};
 
 const employee2 = {
-id: 1,
-name: "Alice Johnson",
-age: 30,
-salary: 85000,
-department: "Engineering",
-skills: ["JavaScript", "React", "Node.js"],
-experience: 5
-}  
+  
+  id: 2,
+  name: "Kajal",
+  age: 20,
+  salary: 35000,
+  department: "Engineering",
+  skills: ["JavaScript", "React"],
+  experience: 2
+};
 
-
-const employee3 ={
-id: 1,
-name: "Alice Johnson",
-age: 30,
-salary: 85000,
-department: "Engineering",
-skills: ["JavaScript", "React", "Node.js"],
-experience: 5
-}  
-
+const employee3 = {
+  
+  id: 3,
+  name: "Isha",
+  age: 21,
+  salary: 55000,
+  department: "Science",
+  skills: ["Python"],
+  experience: 1
+};
 
 const employee4 = {
-id: 1,
-name: "Alice Johnson",
-age: 30,
-salary: 85000,
-department: "Engineering",
-skills: ["JavaScript", "React", "Node.js"],
-experience: 5
-}  
-
+  
+  id: 4,
+  name: "Barsha",
+  age: 22,
+  salary: 45000,
+  department: "Arts",
+  skills: ["Design"],
+  experience: 0
+};
 
 const employee5 = {
-id: 1,
-name: "Alice Johnson",
-age: 30,
-salary: 85000,
-department: "Engineering",
-skills: ["JavaScript", "React", "Node.js"],
-experience: 5
-}  
-
+  
+  id: 5,
+  name: "Pranjali",
+  age: 28,
+  salary: 90000,
+  department: "Management",
+  skills: ["Leadership"],
+  experience: 10
+};
+   
 
 
 
@@ -151,7 +145,7 @@ function filterByExperience(employees, minExperience){
 
   }
 
- 
+ console.log(departmentWiseCount(employees));
  
 
 
@@ -203,4 +197,39 @@ console.log(`Bottom Paid Employee: ${findBottomPaidEmployee(...employees).name} 
 function joinSkills(employee1, employee2){
        const skillsSet = new Set([...employee1.skills, ...employee2.skills]);
        return Array.from(skillsSet);
+}  
+
+console.log(`Combined Skills: ${joinSkills(employee1, employee2).join(", ")}`);
+
+
+
+function totalNumberofEmployees(emp1 , emp2 , ...employees){
+       
+        return 2 + employees.length;
+}   
+
+console.log(`Total Number of Employees: ${totalNumberofEmployees(employee1, employee2, employee3, employee4, employee5)}`);
+
+function avgAge(emp1 , emp2 , ...employees){
+       
+        const totalAge = emp1.age + emp2.age + employees.reduce((acc, emp) => acc + emp.age, 0);
+        const totalEmployees = 2 + employees.length;
+        return totalAge / totalEmployees;
+}   
+console.log(`Average Age of Employees: ${avgAge(employee1, employee2, employee3, employee4, employee5)}`);
+
+
+
+
+
+function countSkills(employees) {
+  return employees.reduce((acc, emp) => {
+    emp.skills.forEach(skill => {
+      acc[skill] = (acc[skill] || 0) + 1;
+    });
+    return acc;
+  }, {});
 }
+console.log('Skill Count:', countSkills(employees));
+
+
