@@ -1,0 +1,122 @@
+nav {
+    text-align: center;
+    padding: 60px 10%;
+    background-color: lightblue;
+    border-color: #0056b3;
+
+    h1 {
+        font-size: 36px;
+        font-weight: 700;
+        color: #333;
+        margin-bottom: 10px;
+
+        span {
+            color: #007bff;
+        }
+    }
+
+    p {
+        font-size: 16px;
+        color: #999;
+    }
+}
+
+.contactForm {
+    padding: 60px 10%;
+    background-color: white;
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(2, 1fr);
+    flex-direction: row;
+
+    #contactFormBrief {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        h1 {
+            font-size: 36px;
+            font-weight: 700;
+            color: #333;
+        }
+
+        p {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        h3 {
+            font-size: 18px;
+            color: #333;
+        }
+
+        p {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.6;
+        }
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        #experience {
+            flex-direction: row;
+        }
+
+        #subscribeAgree {
+            div {
+                flex-direction: row;
+            }
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+
+            div {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                label,
+                b {
+                    margin: 0;
+                    font-size: 14px;
+                    color: #333;
+                }
+
+                a {
+                    color: #007bff;
+                    text-decoration: none;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+        button[type="submit"] {
+            padding: 12px 24px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+
+            &:hover {
+                background-color: #0056b3;
+            }
+        }
+    }
+}
+

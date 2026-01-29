@@ -1,0 +1,22 @@
+@media (max-width: 768px) {
+    .firstGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .SecondGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .ThirdGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .colorNav {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contactForm {
+        grid-template-columns: 1fr;
+    }
+}
+
