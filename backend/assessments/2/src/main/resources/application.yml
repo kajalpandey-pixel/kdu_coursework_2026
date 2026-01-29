@@ -2,7 +2,7 @@ spring:
   datasource:
     url: jdbc:mysql://localhost:3306/EventSphere?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
     username: root
-    password: Kajal@@2002
+    password: ${pass} // keep your database password here 
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     hibernate:
