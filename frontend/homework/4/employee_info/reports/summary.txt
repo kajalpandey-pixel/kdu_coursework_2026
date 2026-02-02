@@ -1,0 +1,29 @@
+SUMMARY REPORT
+==============
+
+Total Employees: 8
+Total Company Salary: 651000.00
+Average Salary: 81375.00
+
+Department-wise Breakdown:
+--------------------------
+
+Department: Engineering
+  Count: 3
+  Total Salary: 296000.00
+  Average Salary: 98666.67
+
+Department: HR
+  Count: 2
+  Total Salary: 137000.00
+  Average Salary: 68500.00
+
+Department: Marketing
+  Count: 1
+  Total Salary: 68000.00
+  Average Salary: 68000.00
+
+Department: Sales
+  Count: 2
+  Total Salary: 150000.00
+  Average Salary: 75000.00
