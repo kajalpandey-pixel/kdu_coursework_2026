@@ -1,0 +1,59 @@
+@use "../abstracts" as *;
+
+.history__title {
+  margin: 0 0 $spacing-md 0;
+  font-size: $history-title-font-size;
+  font-weight: $font-weight-bold;
+  color: $text-dark;
+}
+
+.history {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-md;
+}
+
+.history__item {
+  padding: $spacing-md;
+  border: 1px solid $border-color;
+  border-radius: $border-radius-md;
+  background: $light-bg;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: $history-item-font-size;
+}
+
+.history__item-content {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-xs;
+}
+
+.history__item-qty {
+  font-weight: 600;
+  color: $text-dark;
+}
+
+.history__item-time {
+  font-size: $history-time-font-size;
+  color: $text-muted-3;
+}
+
+.history__item-action {
+  padding: $spacing-xs $spacing-md;
+  border-radius: $border-radius-sm;
+  font-weight: 600;
+  font-size: $history-action-font-size;
+  text-transform: uppercase;
+
+  &.buy {
+    color: $btn-buy-text;
+    background: $history-buy-bg;
+  }
+
+  &.sell {
+    color: $btn-sell-text;
+    background: $history-sell-bg;
+  }
+}

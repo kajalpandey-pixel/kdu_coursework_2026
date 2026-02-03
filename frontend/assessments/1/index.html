@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KDU Stock Market Dashboard</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="app-header">
+    <h1 class="app-header__title">KDU Stock Market Dashboard</h1>
+  </header>
+
+  <div class="container">
+    <div class="dashboard">
+      <main class="dashboard__main">
+        <section class="stock-toolbar">
+          <div class="stock-toolbar__brand">
+            <div class="stock-toolbar__logo">
+              <img src="data:image/png;base64,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" alt="zomato">
+            </div>
+            <h2 class="stock-toolbar__name">Zomato</h2>
+          </div>
+
+          <div class="stock-toolbar__price">
+            <span class="stock-toolbar__label">Price</span>
+            <span id="priceValue" class="stock-toolbar__value">250.00</span>
+            <span id="priceDelta" class="stock-toolbar__delta">—</span>
+          </div>
+
+          <input class="stock-toolbar__input" type="number" id="qty" placeholder="Enter QTY" min="1" />
+
+          <div class="stock-toolbar__actions">
+            <button class="btn btn--buy" id="buyBtn">BUY</button>
+            <button class="btn btn--sell" id="sellBtn">SELL</button>
+          </div>
+        </section>
+
+        <section class="chart">
+          <div class="chart__yLabel">Height: 500px</div>
+
+          <div class="chart__box" id="chartBox">
+            <div class="chart__grid" aria-hidden="true"></div>
+            <div class="chart__bars" id="bars"></div>
+
+            <div class="chart__xAxis">
+              <span>0</span><span>100</span><span>200</span><span>300</span><span>400</span><span>500</span>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <aside class="dashboard__side">
+        <h3 class="history__title">History</h3>
+        <div class="history" id="historyList"></div>
+      </aside>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

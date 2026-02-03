@@ -1,0 +1,85 @@
+@use "../abstracts" as *;
+
+.chart {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: $chart-gap;
+  position: relative;
+}
+
+.chart__yLabel {
+  font-size: $font-size-sm;
+  color: $text-muted-2;
+  font-weight: 600;
+}
+
+.chart__box {
+  position: relative;
+  height: $chart-height;
+  border: $chart-border-width solid $border;
+  border-radius: $chart-border-radius;
+  background: $surface-white;
+  overflow: hidden;
+  padding-bottom: $chart-padding-bottom;
+}
+
+/* grid behind bars */
+.chart__grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(to right, $chart-grid-color $size-1, transparent $size-1),
+    linear-gradient(to bottom, $chart-grid-color $size-1, transparent $size-1);
+  background-size: $chart-grid-size-x $chart-grid-size-y;
+  opacity: 0.6;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* bars sit above grid */
+.chart__bars {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: $chart-axis-height;
+  top: 0;
+  display: flex;
+  align-items: flex-end;
+  gap: 0;
+  padding: 0 $chart-bars-padding-x;
+  z-index: 1;
+}
+
+.chart__xAxis {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: $chart-axis-height;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 $chart-bars-padding-x;
+  border-top: $chart-axis-border-width solid $border-strong;
+  background: $color-white;
+  font-size: $chart-axis-font-size;
+  font-weight: 600;
+  color: $text-strong;
+  z-index: 2;
+}
+
+.bar {
+  flex: 0 0 $chart-bar-width;
+  min-height: $chart-bar-min-height;
+  border-radius: $chart-bar-radius $chart-bar-radius 0 0;
+  transition: background-color $transition-fast ease;
+  border: $size-1 solid $bar-border-color;
+
+  &.up {
+    background: $green;
+  }
+
+  &.down {
+    background: $red;
+  }
+}
