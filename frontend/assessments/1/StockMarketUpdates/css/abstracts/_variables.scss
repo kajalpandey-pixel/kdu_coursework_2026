@@ -1,0 +1,172 @@
+// Colors
+$color-white: #ffffff;
+$color-black: #000000;
+$primary-color: #1e40af;
+$primary-color-dark: #1e3a8a;
+$secondary-color: #0f172a;
+$success-color: #10b981;
+$danger-color: #ef4444;
+$warning-color: #f59e0b;
+$light-bg: #f9fafb;
+$dark-bg: #1f2937;
+$text-color: #111827;
+$text-muted: #6b7280;
+$text-muted-2: #666666;
+$text-muted-3: #999999;
+$text-strong: #444444;
+$text-dark: #333333;
+$border-color: #e5e7eb;
+$border: #cfcfcf;
+$border-strong: #000000;
+$green: #6fda7a;
+$red: #ff6b6b;
+$bg-light: #fafafa;
+$surface-white: $color-white;
+$chart-grid-color: #d9d9d9;
+$bar-border-color: rgba(0, 0, 0, 0.1);
+$btn-buy-bg: #b8f0bf;
+$btn-buy-border: #7edb8a;
+$btn-buy-text: #1e7e34;
+$btn-sell-bg: #ffc2c2;
+$btn-sell-border: #ff8a8a;
+$btn-sell-text: #dc2626;
+$history-buy-bg: #d1f5df;
+$history-sell-bg: #fee2e2;
+$shadow-color-05: rgba(0, 0, 0, 0.05);
+$shadow-color-10: rgba(0, 0, 0, 0.1);
+
+// Typography
+$font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+$font-size-base: 1rem;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+$font-size-sm: 0.875rem;
+$font-size-xs: 0.75rem;
+$font-size-md: 1rem;
+$font-size-lg: 1.125rem;
+$font-size-xl: 1.25rem;
+$font-size-2xl: 1.5rem;
+$font-size-3xl: 1.75rem;
+$font-size-xxs: 12px;
+$font-size-toolbar-name: 14px;
+$line-height-base: 1.5;
+$line-height-heading: 1.2;
+
+// Spacing
+$spacing-xs: 0.25rem;
+$spacing-sm: 0.5rem;
+$spacing-md: 1rem;
+$spacing-lg: 1.5rem;
+$spacing-xl: 2rem;
+$space-6: 6px;
+$space-8: 8px;
+$space-10: 10px;
+$space-12: 12px;
+$space-14: 14px;
+$space-16: 16px;
+$space-20: 20px;
+$space-28: 28px;
+
+// Sizing
+$size-1: 1px;
+$size-2: 2px;
+$size-20: 20px;
+$size-28: 28px;
+$size-100: 100px;
+$size-125: 125px;
+$size-160: 160px;
+$size-500: 500px;
+
+// Border Radius
+$border-radius-xs: 2px;
+$border-radius-sm: 0.25rem;
+$border-radius-md: 0.5rem;
+$border-radius-lg: 1rem;
+$border-radius-6: 6px;
+$border-radius-8: 8px;
+$border-radius-12: 12px;
+
+// Shadows
+$shadow-sm: 0 1px 2px 0 $shadow-color-05;
+$shadow-md: 0 4px 6px -1px $shadow-color-10;
+$shadow-header: 0 2px 4px $shadow-color-10;
+
+// Transitions
+$transition-duration: 0.3s;
+$transition-timing: ease-in-out;
+$transition-fast: 0.2s;
+
+// Breakpoints
+$breakpoint-mobile: 640px;
+$breakpoint-tablet: 1024px;
+$breakpoint-desktop: 1025px;
+
+// Layout
+$container-padding: $space-16;
+$container-margin-y: $space-16;
+$container-radius: $border-radius-12;
+$container-border-width: $size-1;
+$dashboard-gap: $space-16;
+$dashboard-main-gap: $space-12;
+$dashboard-side-padding: $space-12;
+$dashboard-side-radius: $border-radius-8;
+
+// Toolbar
+$toolbar-gap: $space-12;
+$toolbar-padding-y: $space-10;
+$toolbar-padding-x: $space-12;
+$toolbar-margin-bottom: $space-12;
+$toolbar-radius: $border-radius-8;
+$toolbar-brand-gap: $space-10;
+$toolbar-brand-padding-y: $space-6;
+$toolbar-brand-padding-x: $space-10;
+$toolbar-brand-radius: $border-radius-6;
+$toolbar-logo-size: $size-28;
+$toolbar-name-size: $font-size-toolbar-name;
+$toolbar-input-width: $size-160;
+$toolbar-input-padding-y: $space-8;
+$toolbar-input-padding-x: $space-10;
+$toolbar-input-radius: $border-radius-6;
+$toolbar-price-gap: $space-8;
+$toolbar-price-font-size: $font-size-2xl;
+$toolbar-label-font-size: $font-size-sm;
+$toolbar-delta-font-size: $font-size-xl;
+$toolbar-actions-gap: $space-8;
+$toolbar-price-box-padding-y: $space-6;
+$toolbar-price-box-padding-x: $space-10;
+$toolbar-price-box-radius: $border-radius-6;
+
+// Chart
+$chart-gap: $space-12;
+$chart-height: $size-500;
+$chart-border-width: $size-1;
+$chart-border-radius: $border-radius-8;
+$chart-padding-bottom: $space-28;
+$chart-grid-size-x: $size-100;
+$chart-grid-size-y: $size-125;
+$chart-bars-padding-x: $space-20;
+$chart-axis-height: $space-28;
+$chart-axis-font-size: $font-size-xxs;
+$chart-axis-border-width: $size-1;
+$chart-bar-width: $size-20;
+$chart-bar-min-height: $size-1;
+$chart-bar-radius: $border-radius-xs;
+
+// Header
+$header-padding: $space-16;
+$header-border-width: $size-2;
+$header-title-font-size: $font-size-3xl;
+
+// Buttons
+$btn-padding-y: $spacing-sm;
+$btn-padding-x: $spacing-md;
+$btn-border-width: $size-1;
+$btn-radius: $border-radius-6;
+$btn-font-weight: 600;
+$btn-transition: all $transition-duration $transition-timing;
+
+// History
+$history-title-font-size: $font-size-lg;
+$history-item-font-size: $font-size-sm;
+$history-time-font-size: $font-size-xs;
+$history-action-font-size: $font-size-xs;
