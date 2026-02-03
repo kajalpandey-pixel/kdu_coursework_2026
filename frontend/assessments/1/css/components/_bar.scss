@@ -1,0 +1,16 @@
+@use "../abstracts" as *;
+
+// Bar component styles
+.bar {
+  width: $chart-bar-width;
+  border-radius: $chart-bar-radius $chart-bar-radius 0 0;
+  transition: background-color $transition-duration $transition-timing;
+}
+
+.bar--up {
+  background: $green;
+}
+
+.bar--down {
+  background: $red;
+}
