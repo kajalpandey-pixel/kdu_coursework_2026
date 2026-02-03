@@ -1,0 +1,14 @@
+// Bar component styles
+.bar {
+  width: 20px;
+  border-radius: 2px 2px 0 0;
+  transition: background-color 0.3s ease;
+}
+
+.bar--up {
+  background: #6fda7a;
+}
+
+.bar--down {
+  background: #ff6b6b;
+}

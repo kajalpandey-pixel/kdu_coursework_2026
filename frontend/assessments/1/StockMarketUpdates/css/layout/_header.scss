@@ -1,0 +1,19 @@
+@use "../abstracts" as *;
+
+.app-header {
+  background: linear-gradient(90deg, $primary-color 0%, $primary-color-dark 100%);
+  color: $color-white;
+  padding: $header-padding;
+  border-bottom: $header-border-width solid $border-strong;
+  box-shadow: $shadow-header;
+}
+
+.app-header__title {
+  margin: 0;
+  font-size: $header-title-font-size;
+  font-weight: 700;
+  text-align: left;
+  color: $color-white;
+}
+
+

@@ -1,0 +1,34 @@
+@use "../abstracts" as *;
+
+.container {
+  max-width: 100%;
+  margin: $container-margin-y auto;
+  padding: $container-padding;
+  border: $container-border-width solid $border-color;
+  border-radius: $container-radius;
+  background: $surface-white;
+  box-shadow: $shadow-sm;
+}
+
+.dashboard {
+  display: flex;
+  gap: $dashboard-gap;
+}
+
+.dashboard__main {
+  flex: 0 0 75%;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  gap: $dashboard-main-gap;
+}
+
+.dashboard__side {
+  flex: 0 0 25%;
+  width: 25%;
+  border: $size-1 solid $border;
+  border-radius: $dashboard-side-radius;
+  padding: $dashboard-side-padding;
+  background: $bg-light;
+  max-height: fit-content;
+}

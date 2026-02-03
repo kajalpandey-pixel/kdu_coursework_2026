@@ -1,0 +1,33 @@
+@use "../abstracts" as *;
+
+.btn {
+  padding: $btn-padding-y $btn-padding-x;
+  border: $btn-border-width solid $border;
+  border-radius: $btn-radius;
+  background: $surface-white;
+  cursor: pointer;
+  font-weight: $btn-font-weight;
+  transition: $btn-transition;
+}
+
+.btn--buy {
+  background: $btn-buy-bg;
+  border-color: $btn-buy-border;
+  color: $btn-buy-text;
+
+  &:hover {
+    background: $btn-buy-border;
+    color: $color-white;
+  }
+}
+
+.btn--sell {
+  background: $btn-sell-bg;
+  border-color: $btn-sell-border;
+  color: $btn-sell-text;
+
+  &:hover {
+    background: $btn-sell-border;
+    color: $color-white;
+  }
+}

@@ -1,0 +1,80 @@
+@use "../abstracts" as *;
+
+.stock-toolbar {
+  display: flex;
+  align-items: center;
+  gap: $toolbar-gap;
+  border: $size-1 solid $border;
+  border-radius: $toolbar-radius;
+  padding: $toolbar-padding-y $toolbar-padding-x;
+  background: $surface-white;
+  margin-bottom: $toolbar-margin-bottom;
+}
+
+.stock-toolbar__brand {
+  display: flex;
+  align-items: center;
+  gap: $toolbar-brand-gap;
+  padding: $toolbar-brand-padding-y $toolbar-brand-padding-x;
+  border: $size-1 solid $border-strong;
+  border-radius: $toolbar-brand-radius;
+}
+
+.stock-toolbar__logo {
+  width: $toolbar-logo-size;
+  height: $toolbar-logo-size;
+  object-fit: cover;
+}
+
+.stock-toolbar__name {
+  margin: 0;
+  font-size: $toolbar-name-size;
+  font-weight: 600;
+}
+
+.stock-toolbar__input {
+  margin-left: auto;
+  width: $toolbar-input-width;
+  padding: $toolbar-input-padding-y $toolbar-input-padding-x;
+  border: $size-1 solid $border;
+  border-radius: $toolbar-input-radius;
+}
+
+.stock-toolbar__price {
+  display: flex;
+  align-items: center;
+  gap: $toolbar-price-gap;
+  font-size: $toolbar-price-font-size;
+  font-weight: 600;
+  padding: $toolbar-price-box-padding-y $toolbar-price-box-padding-x;
+  border: $size-1 solid $border;
+  border-radius: $toolbar-price-box-radius;
+  background: $surface-white;
+}
+
+.stock-toolbar__label {
+  font-size: $toolbar-label-font-size;
+  color: $text-muted;
+  text-transform: uppercase;
+}
+
+.stock-toolbar__value {
+  color: $primary-color;
+}
+
+.stock-toolbar__delta {
+  font-size: $toolbar-delta-font-size;
+
+  &.up {
+    color: $green;
+  }
+
+  &.down {
+    color: $red;
+  }
+}
+
+.stock-toolbar__actions {
+  display: flex;
+  gap: $toolbar-actions-gap;
+}
