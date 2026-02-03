@@ -1,0 +1,16 @@
+{
+  "name": "employee_info",
+  "version": "1.0.0",
+  "description": "CLI application to process employee data and generate reports",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "summary": "node index.js summary",
+    "department": "node index.js department",
+    "top": "node index.js top"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}

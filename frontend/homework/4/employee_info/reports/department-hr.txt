@@ -1,0 +1,13 @@
+DEPARTMENT REPORT
+=================
+
+Department: HR
+Number of Employees: 2
+
+Employees (Name - Salary):
+--------------------------
+- Bob Smith - 62000.00
+- David Lee - 75000.00
+
+Total Salary: 137000.00
+Average Salary: 68500.00
