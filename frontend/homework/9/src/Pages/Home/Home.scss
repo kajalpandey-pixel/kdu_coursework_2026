@@ -1,0 +1,22 @@
+.home {
+  padding: 2rem;
+
+  h1 {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.status {
+  text-align: center;
+  margin-top: 3rem;
+
+  &.error {
+    color: red;
+  }
+}

@@ -1,0 +1,25 @@
+.product-card {
+  cursor: pointer;
+  background: #fff;
+  border-radius: 12px;
+  padding: 1rem;
+}
+.product-card:hover {
+  background-color: rgb(185, 228, 240);
+}
+.product-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+.product-card .price {
+  display: flex;
+  gap: 0.5rem;
+}
+.product-card .price .old {
+  text-decoration: line-through;
+  color: #999;
+}
+.product-card .price .new {
+  color: #22c55e;
+  font-weight: 600;
+}/*# sourceMappingURL=ProductCard.css.map */
