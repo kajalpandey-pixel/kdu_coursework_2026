@@ -1,0 +1,41 @@
+.details {
+  padding: 2rem;
+}
+.details .back {
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+}
+.details .content {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.details .content img {
+  max-width: 350px;
+  border-radius: 12px;
+}
+.details .info {
+  max-width: 500px;
+}
+.details .price {
+  margin: 1rem 0;
+}
+.details .price .old {
+  margin-right: 0.5rem;
+  text-decoration: line-through;
+  color: #999;
+}
+.details .price .new {
+  color: #22c55e;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.details .gallery {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+.details .gallery img {
+  width: 60px;
+  border-radius: 6px;
+}/*# sourceMappingURL=ProductDetails.css.map */
