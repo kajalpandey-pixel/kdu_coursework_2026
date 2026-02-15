@@ -1,0 +1,25 @@
+{
+  "cleaningTypes": [
+    { "id": "standard", "label": "Standard Cleaning", "basePrice": 100 },
+    { "id": "deep", "label": "Deep Cleaning", "basePrice": 150 },
+    { "id": "moveout", "label": "Move Out Cleaning", "basePrice": 200 }
+  ],
+  "frequencies": [
+    { "id": "one_time", "label": "One Time" },
+    { "id": "weekly", "label": "Weekly" },
+    { "id": "biweekly", "label": "Bi-Weekly" },
+    { "id": "monthly", "label": "Monthly" }
+  ],
+  "extras": [
+    { "id": "oven", "label": "Clean Oven", "price": 20 },
+    { "id": "windows", "label": "Clean Windows", "price": 30 },
+    { "id": "fridge", "label": "Clean Fridge", "price": 25 },
+    { "id": "ironing", "label": "Ironing", "price": 15 }
+  ],
+  "timeSlots": [
+    { "id": "7am", "label": "7:00 AM", "available": true },
+    { "id": "9am", "label": "9:00 AM", "available": true },
+    { "id": "1pm", "label": "1:00 PM", "available": true },
+    { "id": "3pm", "label": "3:00 PM", "available": false }
+  ]
+}
