@@ -55,7 +55,7 @@ export interface BookingResponse {
 export const cleanlyApi = createApi({
   reducerPath: "cleanlyApi",
   baseQuery: fetchBaseQuery({
-    baseUrl: "https://gybz44gati.execute-api.ap-south-1.amazonaws.com/Prod",
+    baseUrl: "https://l9fwnj12rd.execute-api.ap-south-1.amazonaws.com/prod/config",
   }),
   endpoints: (builder) => ({
     getConfig: builder.query<ConfigResponse, void>({
@@ -72,3 +72,4 @@ export const cleanlyApi = createApi({
 });
 
 export const { useGetConfigQuery, useCreateBookingMutation } = cleanlyApi;
+
