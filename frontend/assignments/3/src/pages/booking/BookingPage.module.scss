@@ -1,0 +1,404 @@
+.container {
+  --ink: #1f2a37;
+  --muted: #596579;
+  --line: #d4dbe5;
+  --paper: #f8f4ed;
+  --panel: #ffffff;
+  --brand: #0c7c59;
+  --brand-soft: #e4f4ee;
+  --accent: #c76b3d;
+
+  min-height: 100vh;
+  padding: 24px;
+  background:
+    radial-gradient(circle at 10% 5%, #fff8ef 0%, #fff8ef 22%, transparent 50%),
+    radial-gradient(circle at 90% 0%, #eef7f3 0%, #eef7f3 20%, transparent 44%),
+    var(--paper);
+  color: var(--ink);
+}
+
+.hero {
+  max-width: 760px;
+  margin: 12px auto 28px;
+
+  h1 {
+    margin: 8px 0;
+    font-size: clamp(1.8rem, 4vw, 2.4rem);
+    line-height: 1.1;
+  }
+
+  p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 1rem;
+  }
+}
+
+.eyebrow {
+  margin: 0;
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.mainContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.8fr 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.formSection {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: 0 16px 30px rgba(24, 37, 57, 0.08);
+}
+
+.sectionTitle {
+  margin: 0 0 18px;
+  font-size: 1.12rem;
+  padding-bottom: 10px;
+  border-bottom: 2px dashed var(--line);
+}
+
+.fieldGroup {
+  margin-bottom: 24px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--ink);
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.buttonGroup {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 10px;
+
+  button {
+    border: 1px solid var(--line);
+    background: #fff;
+    color: var(--ink);
+    border-radius: 12px;
+    padding: 11px 12px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: all 0.2s ease;
+
+    &:hover {
+      border-color: #9cb2cb;
+      transform: translateY(-1px);
+    }
+
+    &.active {
+      border-color: var(--brand);
+      background: var(--brand-soft);
+      color: #0a5e45;
+    }
+  }
+}
+
+.roomsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.roomCounter {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 14px;
+  display: grid;
+  gap: 10px;
+  justify-items: center;
+
+  .icon {
+    font-size: 0.73rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+    background: #edf2f8;
+    border-radius: 999px;
+    padding: 5px 10px;
+  }
+
+  .roomLabel {
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+
+  .counterControls {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    button {
+      width: 34px;
+      height: 34px;
+      border-radius: 10px;
+      border: 1px solid var(--line);
+      background: #fff;
+      font-size: 1.2rem;
+      line-height: 1;
+      color: var(--ink);
+
+      &:hover {
+        border-color: var(--brand);
+        color: var(--brand);
+      }
+    }
+
+    .count {
+      min-width: 18px;
+      text-align: center;
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--brand);
+    }
+  }
+}
+
+.extrasGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: 10px;
+
+  button {
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    background: #fff;
+    padding: 12px;
+    min-height: 66px;
+    color: var(--ink);
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    gap: 5px;
+
+    .icon {
+      width: 22px;
+      height: 22px;
+      border-radius: 999px;
+      background: #f1f5fa;
+      display: grid;
+      place-items: center;
+      font-weight: 700;
+      color: var(--muted);
+    }
+
+    &:hover {
+      border-color: #9cb2cb;
+    }
+
+    &.active {
+      border-color: var(--brand);
+      background: var(--brand-soft);
+
+      .icon {
+        background: #cceadd;
+        color: #0a5e45;
+      }
+    }
+  }
+}
+
+.textarea,
+.inputGroup input,
+.cardInputs input,
+.personalInputs input {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 11px 12px;
+  font-size: 0.95rem;
+  color: var(--ink);
+  background: #fff;
+
+  &:focus {
+    outline: none;
+    border-color: #7da4c8;
+    box-shadow: 0 0 0 2px rgba(125, 164, 200, 0.2);
+  }
+}
+
+.textarea {
+  min-height: 94px;
+  resize: vertical;
+}
+
+.dateTimeSection {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.inputGroup {
+  label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+}
+
+.timeSlots {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+
+  button {
+    border: 1px solid var(--line);
+    background: #fff;
+    border-radius: 12px;
+    padding: 11px;
+    color: var(--ink);
+    font-size: 0.87rem;
+
+    &:hover {
+      border-color: #9cb2cb;
+    }
+
+    &:disabled {
+      cursor: not-allowed;
+      opacity: 0.6;
+      background: #f2f4f7;
+    }
+
+    &.active {
+      border-color: var(--brand);
+      color: #0a5e45;
+      background: var(--brand-soft);
+    }
+  }
+}
+
+.paymentSection {
+  border-top: 1px solid var(--line);
+  padding-top: 12px;
+}
+
+.secureLabel {
+  margin: -8px 0 16px;
+  font-size: 0.86rem;
+  color: var(--muted);
+}
+
+.cardInputs,
+.personalInputs {
+  display: grid;
+  gap: 10px;
+}
+
+.cardRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.4fr;
+  gap: 10px;
+}
+
+.addressRow {
+  display: grid;
+  grid-template-columns: 1.8fr 1fr;
+  gap: 10px;
+}
+
+.termsSection {
+  margin: 4px 0 14px;
+
+  label {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    font-size: 0.92rem;
+    color: var(--muted);
+  }
+
+  input[type="checkbox"] {
+    margin-top: 2px;
+    width: 16px;
+    height: 16px;
+  }
+
+  a {
+    color: #0a5e45;
+  }
+}
+
+.errorMessage {
+  margin: 0 0 12px;
+  color: #a11f2e;
+  font-size: 0.92rem;
+}
+
+.totalPrice {
+  margin-bottom: 14px;
+  color: var(--muted);
+  font-size: 0.95rem;
+
+  .amount {
+    margin-left: 8px;
+    color: var(--ink);
+    font-weight: 700;
+    font-size: 1.4rem;
+  }
+}
+
+.submitButton {
+  width: 100%;
+  border: 0;
+  border-radius: 12px;
+  padding: 14px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(120deg, #0c7c59, #159a74);
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.55;
+  }
+}
+
+.statusMessage {
+  margin: 90px auto;
+  text-align: center;
+  color: #2e3b4e;
+  font-size: 1.3rem;
+}
+
+@media (max-width: 980px) {
+  .mainContent {
+    grid-template-columns: 1fr;
+  }
+
+  .timeSlots {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding: 14px;
+  }
+
+  .formSection {
+    padding: 16px;
+    border-radius: 14px;
+  }
+
+  .dateTimeSection,
+  .roomsGrid,
+  .cardRow,
+  .addressRow {
+    grid-template-columns: 1fr;
+  }
+}
