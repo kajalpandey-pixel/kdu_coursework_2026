@@ -1,0 +1,39 @@
+.header {
+  background: white;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 700;
+  color: #6dd5ed;
+  -webkit-background-clip: text;
+          background-clip: text;
+  letter-spacing: 1px;
+}
+
+.phone {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2c3e50;
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 15px 20px;
+  }
+  .logo {
+    font-size: 24px;
+  }
+  .phone {
+    font-size: 16px;
+  }
+}/*# sourceMappingURL=Header.module.css.map */
