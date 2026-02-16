@@ -1,0 +1,89 @@
+.status-page {
+  max-width: 560px;
+  margin: 24px 0 0 24px;
+  padding: 20px;
+
+  h1 {
+    margin: 0 0 14px;
+    color: #1f2937;
+    font-size: 1.6rem;
+  }
+
+  .eventRegistration {
+    border: none;
+    border-radius: 8px;
+    background: #0ea5a4;
+    color: #ffffff;
+    padding: 10px 14px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+
+  .eventRegistration:hover {
+    background: #0f766e;
+  }
+
+  .status-card {
+    margin-top: 16px;
+    border: 1px solid #d1d5db;
+    border-radius: 12px;
+    padding: 16px;
+    background: #ffffff;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.06);
+  }
+
+  .status-card p {
+    margin: 10px 0;
+    color: #1f2937;
+  }
+
+  .status-card hr {
+    border: 0;
+    border-top: 1px solid #e5e7eb;
+    margin: 10px 0;
+  }
+
+  .status-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .badge {
+    border-radius: 999px;
+    padding: 3px 10px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    opacity: 0.45;
+  }
+
+  .badge.active {
+    opacity: 1;
+  }
+
+  .badge.queued {
+    border: 1px solid #f59e0b;
+    color: #92400e;
+    background: #fffbeb;
+  }
+
+  .badge.successful {
+    border: 1px solid #22c55e;
+    color: #166534;
+    background: #f0fdf4;
+  }
+
+  .status-loading {
+    margin-top: 10px;
+    color: #6b7280;
+  }
+
+  .status-error {
+    margin-top: 10px;
+    color: #b91c1c;
+    font-weight: 600;
+  }
+}
